@@ -3,6 +3,7 @@
   "description": "RemoteCacher makes it simple to store remote data in your browser's native localStorage",
   "keywords": [
     "caching",
+    "browser-caching",
     "localstorage",
     "localstorage-caching",
     "localstorage-interface",
