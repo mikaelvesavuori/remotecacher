@@ -65,7 +65,7 @@ This can be done per key with `RemoteCacher.evict(cacheKey)` provided a given ke
 Load the script from [unpkg](https://unpkg.com) with:
 
 ```
-<script src="https://unpkg.com/remotecacher@1.0.3/dist/remotecacher.js"></script>
+<script src="https://unpkg.com/remotecacher@1.0.4/dist/remotecacher.js"></script>
 ```
 
 Or just use it old-school, by downloading the script and referencing it locally if you prefer.

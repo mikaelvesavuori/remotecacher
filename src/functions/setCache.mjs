@@ -14,6 +14,7 @@ import {
  * @param {object} data
  * @param {number} cacheKey
  * @returns {void}
+ * @throws {error} - Throws errors if there is no or invalid data, problems getting cached data, or if data could not be cached
  */
 export function setCache(data, cacheKey) {
   if (!data || !cacheKey) {

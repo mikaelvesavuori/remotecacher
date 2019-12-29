@@ -4,12 +4,13 @@ import {
 } from './errorHandling.mjs';
 
 /**
- * evictCache clears localStorage
+ * evictCache clears localStorage.
  *
  * @exports
  * @function
  * @param {string} [cacheKey] - Optional: Erases cacheKey from localStorage. If no cacheKey is passed, a complete localStorage.clear() will happen.
- * @return {void}
+ * @returns {void}
+ * @throws {error} - Throws errors if there is no localStorage or no matching cache key in localStorage
  */
 export function evictCache(cacheKey) {
   if (!window.localStorage) {

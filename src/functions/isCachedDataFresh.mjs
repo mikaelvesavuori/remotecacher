@@ -3,13 +3,13 @@ import { isLocalStorageAvailable } from './isLocalStorageAvailable.mjs';
 import { ERROR_MSG_NO_WINDOW, ERROR_MSG_UNABLE_TO_RETURN_CACHED_DATA } from './errorHandling.mjs';
 
 /**
- * isCachedDataFresh checks if data has already been fetched within the maximum lifetime span
+ * isCachedDataFresh checks if data has already been fetched within the maximum lifetime span.
  *
  * @exports
  * @function
- * @param {number} cacheTtl
- * @param {string} cacheKey
- * @returns {boolean}
+ * @param {string} cacheKey - Cache key to get in localStorage
+ * @param {number} cacheTtl - Cache time-to-live in seconds
+ * @returns {boolean} - Return true/false based on whether or not cached data is fresh
  */
 export function isCachedDataFresh(cacheKey, cacheTtl) {
   if (!isLocalStorageAvailable()) {

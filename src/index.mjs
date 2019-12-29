@@ -23,6 +23,7 @@ import {
  * @property {object} [headers={ method: 'GET' }] - Headers block to pass to Fetch().
  * @property {number} [cacheTtl=3600] - Cache time-to-live, specified in seconds. Default is 1 hour.
  * @returns {promise}
+ * @throws {error} - Throws errors if there is a missing cacheKey in call, or missing source parameter when fetching data
  */
 export async function cache({
   cacheKey,

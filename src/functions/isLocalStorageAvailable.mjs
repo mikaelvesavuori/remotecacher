@@ -5,7 +5,8 @@ import { ERROR_MSG_NO_WINDOW } from './errorHandling.mjs';
  *
  * @exports
  * @function
- * @return {void}
+ * @throws {error} - Throws error if there is no window object
+ * @returns {void}
  */
 export function isLocalStorageAvailable() {
   // Check if this is client-side, and has Window object
